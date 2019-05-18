@@ -1,0 +1,58 @@
+@mixin clearfix(){
+    content: '';
+	display: table;
+	clear: both;
+}
+
+.foot{
+	width: 100%;
+	min-height: 177px;
+	background: #000;
+	border-top: 1px solid #FF0036;
+	position: absolute;
+	font-size: 12px;
+	// bottom: 0;
+	padding-bottom: 10px;
+	.main-foot{
+		width: 1190px;
+		min-height: 177px;
+		text-align: left;
+		margin: 0 auto;
+		.clearfix{
+			@include clearfix();
+			li{
+				float: left;
+				list-style: none;
+				padding: 10px 0;
+				margin-right: 5px;
+			}
+			a{
+				text-decoration: none;
+				color: #ffffff;
+			}
+		}
+		.clearfix:nth-of-type(2) a{
+			border-right: 1px solid #ffffff;
+			padding-right: 10px;
+		}
+		p:nth-of-type(1) span{
+			margin-right: 83px;
+		}
+		p:nth-of-type(2) span{
+			margin-right: 83px;
+			// line-height: 15px;
+		}
+		p:nth-of-type(2){
+			padding-top: 10px;
+		}
+		p:nth-of-type(2) span:nth-child(3) img{
+			vertical-align: middle;
+		}
+		p:nth-of-type(3) {
+			padding: 10px 0;
+		}
+		p:nth-of-type(3) img{
+			margin-right: 10px;
+		}
+	}
+}

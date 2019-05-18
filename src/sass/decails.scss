@@ -1,0 +1,180 @@
+@charset "utf-8";
+@import 'head';
+@import 'stairs';
+.content {
+	width: 994px;
+	min-height: 600px;
+	position: relative;
+	margin: 0 auto;
+	.sbox {
+		width: 400px;
+		height: 400px;
+		margin: 20px auto 0;
+		float: left;
+		border: 1px solid #ccc;
+		cursor: pointer;
+		position: relative;
+		.moveBox{
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: none;
+			// background: orange;
+			background-image: url(//img-tmdetail.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png);
+			opacity: 0.4;
+			width: 40px;
+			height: 40px;
+		}
+		img {
+			width: 400px;
+			height: 400px;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+	.bbox {
+		display: none;
+		width: 400px;
+		height: 400px;
+		margin: 20px auto 0;
+		float: left;
+		border: 1px solid #ccc;
+		position: relative;
+		left: 10px;
+		z-index: 100;
+		overflow: hidden;
+		img{
+			width: 150%;
+			height: 150%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	
+	ul {
+		overflow: hidden;
+		width: 100%;
+		li {
+			width: 60px;
+			height: 60px;
+			float: left;
+			overflow: hidden;
+			margin: 20px 0 20px 22px;
+			border: 2px solid transparent;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		li:hover{
+			border-color: #000;
+		}
+	}
+	.fangdajing-right {
+		width: 530px;
+		height: 485px;
+		position: absolute;
+		top: 20px;
+		left: 460px;
+		h1 {
+			padding-bottom: 0.2em;
+			line-height: 1;
+			font-size: 16px;
+			font-weight: 700;
+			a {
+				color: #000;
+			}
+		}
+		.detail-price {
+			background-color: #e9e9e9;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			margin-right: 20px;
+			line-height: 30px;
+			margin-top: 20px;
+			span:nth-of-type(1) {
+				color: #999;
+				font-size: 14px;
+				text-align: center;
+				display: inline-block;
+				width: 69px;
+				margin: 0 0 0 8px;
+				vertical-align: middle;
+			}
+			span:nth-of-type(2) {
+				color: #ff0036;
+				font-size: 24px;
+				font-weight: 700;
+				vertical-align: middle;
+			}
+		}
+		.detail-num {
+			margin: 15px 0px;
+			label {
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				color: #999;
+				font-size: 14px;
+				display: inline-block;
+				width: 69px;
+				margin: 0 0 0 8px;
+				vertical-align: middle;
+			}
+			input {
+				width: 30px;
+				height: 30px;
+			}
+			span {
+				width: 16px;
+				height: 15px;
+				cursor: pointer;
+				font-size: 16px;
+				border: 1px solid #a7a6ab;
+				line-height: 12px;
+				display: inline-block;
+				text-align: center;
+				line-height: 15px;
+			}
+			span:nth-of-type(1) {
+				position: relative;
+				top: -8px;
+				left: 2px;
+				font-weight: 600;
+			}
+			span:nth-of-type(2) {
+				position: relative;
+				top: 11px;
+				left: -16px;
+			}
+		}
+
+		.detail-btn {
+			padding-left: 28px;
+			a{
+				margin-right: 0;
+				float: left;
+				overflow: hidden;
+				position: relative;
+				width: 178px;
+				background-color: #ffeded;
+				border: 1px solid #ff0036;
+				margin-right: 20px;
+				height: 40px;
+				display: inline-block;
+			}
+			button{
+				width: 178px;
+				height: 40px;
+				background-color: #ffeded;
+				border: none;
+				color: #ff0036;
+				cursor: pointer;
+				font-size: 16px;
+			}
+		}
+	}
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>理想生活上天猫</title>
+		<link rel="shortcut icon" href="//g.alicdn.com/mui/global/1.2.35/file/favicon.ico" type="image/x-icon" />
+		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="css/login.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+		<link rel="stylesheet" href="fonts/iconfonts/iconfont.css">
+		<script src="script/thirdplugins/ajax.js"></script>
+		<script src="script/thirdplugins/jquery.js"></script>
+		<!-- <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="http://www.softwhy.com/demo/jQuery/js/jquery.validate.js"></script>
+		<script src="http://www.softwhy.com/demo/jQuery/js/messages_zh.js"></script> -->
+	</head>
+	<body>
+		
+       <header>
+		   <div class="head">
+			   <img src="https://img.alicdn.com/tfs/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png" />
+		   </div>   
+	   </header>
+	   <section>
+		  <div class="content">
+			  <div class="img">
+				  <img src="https://gw.alicdn.com/tfs/TB1D4DVTzTpK1RjSZKPXXa3UpXa-1190-600.jpg" >
+			  </div>
+			  <form action="#" method="post">
+			  		<div class="container">
+						<!-- <div class="error">用户名输入错误</div> -->
+						<div class="register-box">密码登录</div>
+						<div class="input">
+							<i class="iconfont icon-yonghuming"></i> 
+							<input type="text" name="username" class="usename" /> 
+						</div>
+						
+						<div class="input">
+							<i class="iconfont icon-suo"></i> 
+							<input type="password" name="passworld" class="passworld"/>
+						</div>
+						
+						<div class="submit">
+							<input type="button" class="login" value="立即登录" /> 
+							</div>
+						<p>
+							<a href="#">忘记密码</a>
+							<a href="#">忘记会员名</a>
+							<a href="http://10.31.163.54/jsmulu/taobao/src/login.html">免费注册</a>
+					    </p>
+					</div>	
+					
+			  </form>
+		  </div> 
+	   </section>
+		<div class="foot"></div>
+          <script>
+			  $('.foot').load('foot.html',function(){
+				   $('.foot').css({
+					   'background':'#fff',
+					   'borderTopWidth':0
+				   });
+				    $('.clearfix').find('a').css('color','#000');
+					$('.main-foot').find('p').eq(2).css('display','none');
+			  });
+			  
+			  
+			  var login=document.querySelector('.login');
+			  	var user=document.querySelector('.usename');
+			  	var pass=document.querySelector('.passworld');
+			  	login.onclick=function(){
+			  		ajax({
+			  			type:'post',
+			  			url:'http://10.31.163.54/jsmulu/taobao/php/login.php',
+			  			data:{
+			  				usename:user.value,
+			  				password:pass.value
+			  			},
+			  			success:function(data){
+							console.log(data)
+			  				if(!data){
+			  					alert('用户名或者密码错误');
+			  					pass.value='';
+			  				}else{
+			  					location.href="http://10.31.163.54/jsmulu/taobao/src/index.html";
+			  					localStorage.setItem('userid',user.value);
+								// $.cookie('user',user.value);
+			  				}
+			  			}
+			  		});
+			  	}
+			 
+		  </script>
+
+	</body>
+</html>

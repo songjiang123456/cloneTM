@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>天猫注册</title>
+		<link rel="shortcut icon" href="//g.alicdn.com/mui/global/1.2.35/file/favicon.ico" type="image/x-icon" />
+		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="css/registor.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+		<link rel="stylesheet" href="fonts/iconfonts/iconfont.css">
+		<script src="script/thirdplugins/jquery.js" charset="utf-8" type="text/javascript"></script>
+		<script src="script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		
+       <header>
+		   <div class="head">
+			   <img src="https://img.alicdn.com/tfs/TB1_Gn8RXXXXXXqaFXXXXXXXXXX-380-54.png" />
+		   </div>   
+	   </header>
+	   <section>
+		  <div class="content">
+			  <div class="img">
+				  <img src="https://gw.alicdn.com/tfs/TB1D4DVTzTpK1RjSZKPXXa3UpXa-1190-600.jpg" >
+			  </div>
+			  <form action="http://10.31.163.54/jsmulu/taobao/php/register.php" method="post" class="form">
+			  		<div class="container">
+						<div class="register-box">注册账号</div>
+						<div class="input">
+							<label>用户名：</label><input type="text" name="usename" />
+							<span></span> 
+						</div>
+					   
+						<div class="input">
+							<label>手机号：</label><input type="text" name="iphone" />
+							<span></span> 
+						</div>
+						 
+						<div class="input">
+							<label>密码：</label><input type="password" name="passworld" />
+							<span></span> 
+						</div> 
+						<div class="input">
+							<label>确认密码：</label><input type="password" name="resetpassworld" />
+							<span></span> 
+						</div> 
+						
+						<p class="submit">
+							<input type="submit" id="submit" value="立即注册" name="submit" />
+						</p>
+						<p><a href="http://10.31.163.54/jsmulu/taobao/src/login.html" target="_blank">已有账号，立即登录</a></p>
+					</div>	
+					
+			  </form>
+		  </div> 
+	   </section>
+		<div class="foot"></div>
+		<script src="script/js/RegExp.js"></script>
+          <script>
+			  $('.foot').load('foot.html',function(){
+				   $('.foot').css({
+					   'background':'#fff',
+					   'borderTopWidth':0
+				   });
+				    $('.clearfix').find('a').css('color','#000');
+					$('.main-foot').find('p').eq(2).css('display','none');
+			  });
+		  </script>
+
+	</body>
+</html>

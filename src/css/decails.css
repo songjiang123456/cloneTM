@@ -1,0 +1,645 @@
+header {
+  width: 100%;
+  height: 32px;
+  background: #f2f2f2;
+  font-size: 12px;
+}
+header .container {
+  width: 1230px;
+  height: 32px;
+  margin: 0 auto;
+}
+header .container .header-left {
+  float: left;
+}
+header .container .header-left span {
+  color: #999;
+  line-height: 32px;
+  font-family: 'Microsoft';
+  display: inline-block;
+}
+header .container .header-left a {
+  padding: 0 10px;
+}
+header .container .header-left a:nth-child(1) {
+  padding-left: 20px;
+}
+header .container .header-right {
+  float: right;
+}
+header .container .header-right .clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+header .container .header-right li {
+  float: left;
+  position: relative;
+}
+header .container .header-right .empty {
+  width: 1px;
+  height: 16px;
+  background-color: #ccc;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+header .container .header-right .iphoneImg {
+  position: absolute;
+  width: 175px;
+  height: 227px;
+  background: #ffffff;
+  top: 28px;
+  left: -48px;
+  z-index: 20;
+  box-shadow: 0 0 5px #aaa;
+  display: none;
+}
+header .container .header-right .iphoneImg div {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 5px solid transparent;
+  border-bottom-color: #ffffff;
+  left: 50%;
+  top: -10px;
+}
+header .container .header-right .iphoneImg .pimg {
+  width: 175px;
+  height: 175px;
+  margin: 5px 0 0px;
+  background: url(https://img.alicdn.com/tfs/TB1vJ0POwTqK1RjSZPhXXXfOFXa-175-215.png) 0 0 no-repeat;
+}
+header .container .header-right .iphoneImg .tianmao {
+  background: url(https://img.alicdn.com/tps/TB1sR93OFXXXXaAXXXXXXXXXXXX-145-30.png) center bottom no-repeat;
+  margin: 0 15px;
+  line-height: 35px;
+  width: 160px;
+  position: absolute;
+  top: 180px;
+  height: 30px;
+  left: -11px;
+}
+header .container .header-right .shangjia {
+  width: 122px;
+  height: 160px;
+  padding: 8px 10px;
+  position: absolute;
+  left: -70px;
+  top: 32px;
+  border: 1px solid #eee;
+  z-index: 30;
+  background-color: #ffffff;
+  display: none;
+  transition: all 0.5s;
+}
+header .container .header-right .shangjia h2 {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+header .container .header-right .shangjia ol {
+  overflow: hidden;
+  border-bottom: 1px dashed #666;
+  margin-bottom: 5px;
+}
+header .container .header-right .shangjia li {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 9px;
+  color: #666;
+}
+header .container .header-right li:nth-of-type(1) i {
+  transition: all 0.5s;
+  position: relative;
+}
+header .container .header-right li:nth-of-type(3) i {
+  transition: all 0.5s;
+  position: relative;
+}
+header .container .header-right li:nth-of-type(7) i {
+  transition: all 0.5s;
+  position: relative;
+}
+header .container .header-right li:hover a {
+  color: red;
+}
+header .container .header-right li:nth-of-type(odd):hover a {
+  text-decoration: underline;
+  background: #ffffff;
+}
+header .container .header-right li:nth-of-type(5):hover a {
+  text-decoration: none;
+  background: #f2f2f2;
+}
+header .container .header-right li:nth-of-type(6):hover a {
+  text-decoration: underline;
+  background: #ffffff;
+}
+header .container .header-right a {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  color: #999;
+  text-decoration: none;
+}
+header .container .header-right a i {
+  vertical-align: top;
+  display: inline-block;
+}
+header .container .header-right a span {
+  vertical-align: top;
+  display: inline-block;
+  color: #ff0036 !important;
+}
+header .container .header-right li:nth-of-type(1) i,
+header .container .header-right li:nth-of-type(3) i,
+header .container .header-right li:nth-of-type(6) i,
+header .container .header-right li:nth-of-type(7) i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  border-top-color: #bbb;
+  top: 15px;
+  right: 2px;
+}
+header .container .header-right li:nth-of-type(2) span,
+header .container .header-right li:nth-of-type(4) span,
+header .container .header-right li:nth-of-type(7) span {
+  display: inline-block;
+  color: red;
+  font-size: 16px;
+  padding: 0 5px;
+}
+header .container .header-right li:nth-of-type(4) span {
+  padding: 0;
+}
+header .container .header-right .two-nav {
+  position: absolute;
+  width: 80px;
+  padding-left: 10px;
+  border: 1px solid #eee;
+  border-top-color: transparent;
+  top: 32px;
+  display: none;
+  z-index: 10;
+  background-color: #ffffff;
+}
+header .container .header-right .two-nav p {
+  color: #000;
+  cursor: pointer;
+  padding: 7px 0 0 0;
+}
+header .container .header-right .two-nav p:nth-child(2) {
+  padding-bottom: 10px;
+}
+header .container .header-right li:nth-of-type(1):hover .two-nav {
+  border-top-color: transparent;
+  display: block;
+}
+header .container .header-right li:nth-of-type(1):hover i {
+  transform: rotate(180deg);
+  top: 14px;
+}
+header .container .header-right li:nth-of-type(3):hover .two-nav {
+  border-top-color: transparent;
+  display: block;
+}
+header .container .header-right li:nth-of-type(3):hover i {
+  transform: rotate(180deg);
+  top: 14px;
+}
+header .container .header-right li:nth-of-type(5):hover .iphoneImg {
+  border-top-color: transparent;
+  display: block;
+}
+header .container .header-right li:nth-of-type(7):hover i {
+  transform: rotate(180deg);
+  top: 14px;
+}
+header .container .header-right li:nth-of-type(7):hover .shangjia {
+  border-top-color: transparent;
+  display: block;
+}
+
+.stairs-left {
+  position: fixed;
+  bottom: 50px;
+  width: 35px;
+  text-align: center;
+  font-size: 12px;
+  z-index: 40;
+  background-color: #fff;
+}
+.stairs-left div.first {
+  background: #ff0036;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1px;
+}
+.stairs-left li {
+  background: #666;
+  width: 24px;
+  height: 28px;
+  line-height: 12px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1px;
+  padding: 6px;
+}
+.stairs-left li.stairactive {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+.stairs-left div.last {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1px;
+}
+.stairs-left div.last i {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  height: 16px;
+}
+.stairs-left li:nth-of-type(1):hover {
+  background: #64C333;
+}
+.stairs-left li:nth-of-type(2):hover {
+  background: #000;
+}
+.stairs-left li:nth-of-type(3):hover {
+  background: #EA5F8D;
+}
+.stairs-left li:nth-of-type(4):hover {
+  background: #0AA6E8;
+}
+.stairs-left li:nth-of-type(5):hover {
+  background: #64C333;
+}
+.stairs-left li:nth-of-type(6):hover {
+  background: #F15453;
+}
+.stairs-left li:nth-of-type(7):hover {
+  background: #19C8A9;
+}
+.stairs-left li:nth-of-type(8):hover {
+  background: #000;
+}
+
+.stairs-right {
+  position: fixed;
+  width: 35px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+.stairs-right .stairs-logo {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  position: absolute;
+  top: 130px;
+}
+.stairs-right .stairs-logo .tulogo {
+  position: relative;
+}
+.stairs-right .stairs-logo .tulogo .box-hidden {
+  display: none;
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  position: absolute;
+  right: 112px;
+  z-index: 9999;
+  background-color: #494949;
+  top: 0px;
+}
+.stairs-right .stairs-logo .tulogo .box-hidden i {
+  display: inline-block;
+  position: absolute;
+  border: 8px solid transparent;
+  border-left-color: #494949;
+  right: -16px;
+  top: -6px;
+}
+.stairs-right .stairs-logo .tulogo .box-hidden .icon-first {
+  top: 8px;
+}
+.stairs-right .stairs-logo .tulogo img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.stairs-right .stairs-logo .tulogo img:hover {
+  opacity: 1;
+}
+.stairs-right .stairs-logo .sort {
+  position: relative;
+  width: 35px;
+  height: 135px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.stairs-right .stairs-logo .sort .sortgouwu {
+  width: 23px;
+  height: 133px;
+  margin: 0 auto;
+  border: 1px solid #444;
+  border-width: 1px 0;
+  text-align: center;
+}
+.stairs-right .stairs-logo .sort .sortgouwu i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .sort .sortgouwu span:nth-of-type(1) {
+  color: #fff;
+  font-size: 12px;
+}
+.stairs-right .stairs-logo .sort .sortgouwu span:nth-of-type(2) {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #ff0036;
+  display: block;
+  color: #fff;
+  margin: 10px 0 0 2px;
+}
+.stairs-right .stairs-logo .money {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .money i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .shoucang {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .shoucang i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .visited {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .visited i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .chongzhi {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .chongzhi i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .fankui {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .fankui i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .erweima {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .erweima i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+.stairs-right .stairs-logo .top {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.stairs-right .stairs-logo .top i {
+  color: white;
+  font-size: 20px;
+  margin: 15px 0 0px 0;
+  display: block;
+}
+
+.content {
+  width: 994px;
+  min-height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+.content .sbox {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto 0;
+  float: left;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+}
+.content .sbox .moveBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  background-image: url(//img-tmdetail.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png);
+  opacity: 0.4;
+  width: 40px;
+  height: 40px;
+}
+.content .sbox img {
+  width: 400px;
+  height: 400px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.content .bbox {
+  display: none;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto 0;
+  float: left;
+  border: 1px solid #ccc;
+  position: relative;
+  left: 10px;
+  z-index: 100;
+  overflow: hidden;
+}
+.content .bbox img {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.content ul {
+  overflow: hidden;
+  width: 100%;
+}
+.content ul li {
+  width: 60px;
+  height: 60px;
+  float: left;
+  overflow: hidden;
+  margin: 20px 0 20px 22px;
+  border: 2px solid transparent;
+}
+.content ul li img {
+  width: 100%;
+  height: 100%;
+}
+.content ul li:hover {
+  border-color: #000;
+}
+.content .fangdajing-right {
+  width: 530px;
+  height: 485px;
+  position: absolute;
+  top: 20px;
+  left: 460px;
+}
+.content .fangdajing-right h1 {
+  padding-bottom: 0.2em;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 700;
+}
+.content .fangdajing-right h1 a {
+  color: #000;
+}
+.content .fangdajing-right .detail-price {
+  background-color: #e9e9e9;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-right: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.content .fangdajing-right .detail-price span:nth-of-type(1) {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  width: 69px;
+  margin: 0 0 0 8px;
+  vertical-align: middle;
+}
+.content .fangdajing-right .detail-price span:nth-of-type(2) {
+  color: #ff0036;
+  font-size: 24px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.content .fangdajing-right .detail-num {
+  margin: 15px 0px;
+}
+.content .fangdajing-right .detail-num label {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  display: inline-block;
+  width: 69px;
+  margin: 0 0 0 8px;
+  vertical-align: middle;
+}
+.content .fangdajing-right .detail-num input {
+  width: 30px;
+  height: 30px;
+}
+.content .fangdajing-right .detail-num span {
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #a7a6ab;
+  line-height: 12px;
+  display: inline-block;
+  text-align: center;
+  line-height: 15px;
+}
+.content .fangdajing-right .detail-num span:nth-of-type(1) {
+  position: relative;
+  top: -8px;
+  left: 2px;
+  font-weight: 600;
+}
+.content .fangdajing-right .detail-num span:nth-of-type(2) {
+  position: relative;
+  top: 11px;
+  left: -16px;
+}
+.content .fangdajing-right .detail-btn {
+  padding-left: 28px;
+}
+.content .fangdajing-right .detail-btn a {
+  margin-right: 0;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 178px;
+  background-color: #ffeded;
+  border: 1px solid #ff0036;
+  margin-right: 20px;
+  height: 40px;
+  display: inline-block;
+}
+.content .fangdajing-right .detail-btn button {
+  width: 178px;
+  height: 40px;
+  background-color: #ffeded;
+  border: none;
+  color: #ff0036;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=decails.css.map */

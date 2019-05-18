@@ -1,0 +1,234 @@
+.foot {
+  width: 100%;
+  min-height: 177px;
+  background: #000;
+  border-top: 1px solid #FF0036;
+  position: absolute;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.foot .main-foot {
+  width: 1190px;
+  min-height: 177px;
+  text-align: left;
+  margin: 0 auto;
+}
+.foot .main-foot .clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+.foot .main-foot .clearfix li {
+  float: left;
+  list-style: none;
+  padding: 10px 0;
+  margin-right: 5px;
+}
+.foot .main-foot .clearfix a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.foot .main-foot .clearfix:nth-of-type(2) a {
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+}
+.foot .main-foot p:nth-of-type(1) span {
+  margin-right: 83px;
+}
+.foot .main-foot p:nth-of-type(2) span {
+  margin-right: 83px;
+}
+.foot .main-foot p:nth-of-type(2) {
+  padding-top: 10px;
+}
+.foot .main-foot p:nth-of-type(2) span:nth-child(3) img {
+  vertical-align: middle;
+}
+.foot .main-foot p:nth-of-type(3) {
+  padding: 10px 0;
+}
+.foot .main-foot p:nth-of-type(3) img {
+  margin-right: 10px;
+}
+
+.foot {
+  width: 100%;
+  min-height: 177px;
+  background: #000;
+  border-top: 1px solid #FF0036;
+  position: absolute;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.foot .main-foot {
+  width: 1190px;
+  min-height: 177px;
+  text-align: left;
+  margin: 0 auto;
+}
+.foot .main-foot .clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+.foot .main-foot .clearfix li {
+  float: left;
+  list-style: none;
+  padding: 10px 0;
+  margin-right: 5px;
+}
+.foot .main-foot .clearfix a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.foot .main-foot .clearfix:nth-of-type(2) a {
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+}
+.foot .main-foot p:nth-of-type(1) span {
+  margin-right: 83px;
+}
+.foot .main-foot p:nth-of-type(2) span {
+  margin-right: 83px;
+}
+.foot .main-foot p:nth-of-type(2) {
+  padding-top: 10px;
+}
+.foot .main-foot p:nth-of-type(2) span:nth-child(3) img {
+  vertical-align: middle;
+}
+.foot .main-foot p:nth-of-type(3) {
+  padding: 10px 0;
+}
+.foot .main-foot p:nth-of-type(3) img {
+  margin-right: 10px;
+}
+
+header {
+  width: 100%;
+}
+header .head {
+  padding: 22px 0px;
+  height: 44px;
+  width: 1190px;
+  margin: auto;
+}
+header .head img {
+  margin-top: 8px;
+  width: 190px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+section .content {
+  width: 100%;
+  background-color: #e53100;
+}
+section .content .img {
+  position: relative;
+  width: 1190px;
+  margin: 0 auto;
+}
+section .content form {
+  width: 350px;
+  height: 404px;
+  position: absolute;
+  background-color: #ffffff;
+  top: 91px;
+  right: 60px;
+  box-sizing: border-box;
+}
+section .content form .container {
+  width: 300px;
+  height: 257px;
+  margin: 0 auto;
+  position: relative;
+}
+section .content form .container .register-box {
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #3c3c3c;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+section .content form .container label {
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  text-align: right;
+  font-weight: 700;
+  line-height: 30px;
+  color: #3c3c3c;
+}
+section .content form .container span {
+  display: inline-block;
+  width: 80%;
+  height: 20px;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+section .content form .container input {
+  width: 180px;
+  height: 30px;
+  outline: none;
+}
+section .content form .container .submit input {
+  width: 216px;
+  height: 30px;
+  border: 0;
+  outline: none;
+  background-color: #e53100;
+  color: #fff;
+  font-size: 16px;
+  margin: 20px 0 0 40px;
+}
+section .content form .container p a {
+  text-align: right;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  color: #666;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  height: 32px;
+  margin-bottom: 20px !important;
+}
+.input i {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  background-color: #ddd;
+  display: inline-block;
+  line-height: 33px;
+  text-align: center;
+  vertical-align: middle;
+}
+.input input {
+  border: none;
+  width: 245px;
+}
+
+.register-box {
+  margin-bottom: 20px !important;
+}
+
+p {
+  text-align: right;
+}
+p a {
+  width: 25% !important;
+  text-align: right;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,250 @@
+@charset "utf-8";
+$width: 100%;
+$height: 100%;
+$container: 1230px;
+$color: #999;
+@mixin clearfix() {
+	content: '';
+	display: table;
+	clear: both;
+}
+@mixin triangle() {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-top-color: #bbb;
+	top: 15px;
+	right: 2px;
+}
+header {
+	width: $width;
+	height: 32px;
+	background: #f2f2f2;
+	// overflow: hidden;
+	font-size: 12px;
+	.container {
+		width: $container;
+		height: 32px;
+		margin: 0 auto;
+		.header-left {
+			//头部左边的样式
+			float: left;
+			span {
+				color: $color;
+				line-height: 32px;
+				font-family: 'Microsoft';
+				display: inline-block;
+			}
+			a {
+				padding: 0 10px;
+			}
+			a:nth-child(1) {
+				padding-left: 20px;
+			}
+		}
+		.header-right {
+			//头部右边的样式
+			float: right;
+			.clearfix {
+				@include clearfix();
+			}
+			li {
+				float: left;
+				position: relative;
+			}
+			.empty {
+				width: 1px;
+				height: 16px;
+				background-color: #ccc;
+				margin-top: 8px;
+				margin-left: 10px;
+			}
+			.iphoneImg {
+				position: absolute;
+				width: 175px;
+				height: 227px;
+				background: #ffffff;
+				top: 28px;
+				left: -48px;
+				z-index: 20;
+				box-shadow: 0 0 5px #aaa;
+                display: none;
+				div {
+					width: 0;
+					height: 0;
+					position: absolute;
+					border: 5px solid transparent;
+					border-bottom-color: #ffffff;
+					left: 50%;
+					top: -10px;
+				}
+				.pimg {
+					width: 175px;
+					height: 175px;
+					margin: 5px 0 0px;
+					background: url(https://img.alicdn.com/tfs/TB1vJ0POwTqK1RjSZPhXXXfOFXa-175-215.png) 0 0 no-repeat;
+				}
+				.tianmao {
+					background: url(https://img.alicdn.com/tps/TB1sR93OFXXXXaAXXXXXXXXXXXX-145-30.png) center bottom no-repeat;
+					margin: 0 15px;
+					line-height: 35px;
+					width: 160px;
+					position: absolute;
+					top: 180px;
+					height: 30px;
+					left: -11px;
+					
+				}
+			}
+			.shangjia{
+				width: 122px;
+				height: 160px;
+				padding: 8px 10px;
+				position: absolute;
+				left: -70px;
+				top: 32px;
+				border: 1px solid #eee;
+				z-index: 30;
+				background-color: #ffffff;
+				display: none;
+				transition: all 0.5s;
+				h2{
+					color: #000;
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+				ol{
+					overflow: hidden;
+					border-bottom: 1px dashed #666;
+					margin-bottom: 5px;
+				}
+					
+					li{
+						display:block;
+						margin-right: 10px;
+						margin-bottom: 9px;
+						color: #666;
+					}
+				
+				
+			}
+			li:nth-of-type(1) i {
+				transition: all 0.5s;
+				position: relative;
+			}
+			li:nth-of-type(3) i {
+				transition: all 0.5s;
+				position: relative;
+			}
+			li:nth-of-type(7) i {
+				transition: all 0.5s;
+				position: relative;
+			}
+			li:hover a {
+				color: red;
+			}
+			li:nth-of-type(odd):hover a {
+				//鼠标移入样式的改变
+				text-decoration: underline;
+				background: #ffffff;
+			}
+			li:nth-of-type(5):hover a {
+				text-decoration: none;
+				background: #f2f2f2;
+			}
+			li:nth-of-type(6):hover a {
+				text-decoration: underline;
+				background: #ffffff;
+			}
+
+			a {
+				display: inline-block;
+				height: 32px;
+				line-height: 32px;
+				padding: 0 12px;
+				color: #999;
+				text-decoration: none;
+				i {
+					vertical-align: top;
+					display: inline-block;
+				}
+				span {
+					vertical-align: top;
+					display: inline-block;
+					color: #ff0036 !important;
+				}
+			}
+			li:nth-of-type(1) i,
+			li:nth-of-type(3) i,
+			li:nth-of-type(6) i,
+			li:nth-of-type(7) i {
+				@include triangle();
+			}
+			li:nth-of-type(2) span,
+			li:nth-of-type(4) span,
+			li:nth-of-type(7) span {
+				display: inline-block;
+				color: red;
+				font-size: 16px;
+				padding: 0 5px;
+			}
+			li:nth-of-type(4) span {
+				padding: 0;
+			}
+
+			.two-nav {
+				position: absolute;
+				width: 80px;
+				padding-left: 10px;
+				border: 1px solid #eee;
+				border-top-color: transparent;
+				top: 32px;
+				display: none;
+				z-index: 10;
+				background-color: #ffffff;
+
+				p {
+					color: #000;
+					cursor: pointer;
+					padding: 7px 0 0 0;
+				}
+				p:nth-child(2) {
+					padding-bottom: 10px;
+				}
+			}
+			li:nth-of-type(1):hover .two-nav {
+				//显示二级导航
+				border-top-color: transparent;
+				display: block;
+			}
+			li:nth-of-type(1):hover i {
+				transform: rotate(180deg);
+				top: 14px;
+			}
+			li:nth-of-type(3):hover .two-nav {
+				//显示二级导航
+				border-top-color: transparent;
+				display: block;
+			}
+			li:nth-of-type(3):hover i {
+				transform: rotate(180deg);
+				top: 14px;
+			}
+			li:nth-of-type(5):hover .iphoneImg {
+				//显示二级导航
+				border-top-color: transparent;
+				display: block;
+			}
+			li:nth-of-type(7):hover i{
+				transform: rotate(180deg);
+				top: 14px;
+			}
+			li:nth-of-type(7):hover .shangjia {
+				//显示二级导航
+				border-top-color: transparent;
+				display: block;
+			}
+		}
+	}
+}

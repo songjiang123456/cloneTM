@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import 'foot';
+@import "registor";
+.input{
+	border: 1px solid #ccc;	
+	height: 32px;
+	margin-bottom: 20px!important;
+	i{
+		width: 32px;
+		height: 32px;
+		font-size: 24px;
+		background-color: #ddd;
+		display: inline-block;
+		line-height: 33px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	input{
+		border: none;
+		width: 245px;
+		
+	}
+} 
+.register-box{
+	margin-bottom: 20px!important;
+}
+p{
+	text-align: right;
+	a{
+		width: 25%!important;
+		text-align: right;
+	}
+}
